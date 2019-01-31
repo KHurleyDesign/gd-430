@@ -3,6 +3,7 @@ body {
 }
 
 h1,
+h2,
 p {
   font-family: 'Open Sans', sans-serif;
 }
@@ -13,6 +14,7 @@ h1 {
 
 h2 {
   font-weight: 600;
+  text-decoration: underline;
 }
 
 p {
