@@ -15,7 +15,7 @@
         .container {
             display: grid;
             grid-template-columns: 600px 600px;
-            grid-template-rows: 100px 400px 500px 100px 400px 40px 100px;
+            grid-template-rows: 100px 400px 600px 100px 400px 40px 100px;
         }
 
 
@@ -47,6 +47,15 @@
             border-top: 300px solid rgba(22, 77, 77, 1.0);
             border-right: 300px solid transparent;
         }
+
+        .triangleBottomRight {
+            grid-column: 2/3;
+            grid-row: 3/4;
+            width: 0;
+            height: 0;
+            border-bottom: 600px solid rgba(113, 88, 226, 1.0);
+            border-left: 600px solid transparent;
+        }
     </style>
 
 </head>
@@ -68,6 +77,7 @@
         deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
         distinctio.
     </h2>
+    <div class="triangleBottomRight"></div>
 </body>
 
 </html>
