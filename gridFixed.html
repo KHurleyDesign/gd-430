@@ -15,7 +15,7 @@
         .container {
             display: grid;
             grid-template-columns: 600px 600px;
-            grid-template-rows: 100px 400px 600px 100px 400px 40px 100px;
+            grid-template-rows: 100px 400px 600px 300px 400px 40px 100px;
         }
 
 
@@ -56,6 +56,13 @@
             border-bottom: 600px solid rgba(113, 88, 226, 1.0);
             border-left: 600px solid transparent;
         }
+
+        .roseImg {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            width: 100%;
+
+        }
     </style>
 
 </head>
@@ -78,6 +85,7 @@
         distinctio.
     </h2>
     <div class="triangleBottomRight"></div>
+    <img class="roseImg" src="rose.jpg" alt="A bright red rose frount faceing, with a bit of stem showing.">
 </body>
 
 </html>
