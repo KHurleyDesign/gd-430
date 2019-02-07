@@ -28,8 +28,7 @@ p {
   font-weight: 400;
 }
 
-.u-button a:link,
-.u-button a:visited {
+.u-button:link, .u-button:visited {
   background-color: #f44336;
   color: white;
   padding: 14px 25px;
@@ -38,8 +37,7 @@ p {
   display: inline-block;
 }
 
-.u-button a:hover,
-.u-button a:active {
+.u-button:hover, .u-button:active {
   background-color: red;
 }
 /*# sourceMappingURL=styles.css.map */
