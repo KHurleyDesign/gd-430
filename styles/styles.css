@@ -29,7 +29,7 @@ p {
 }
 
 .u-button:link, .u-button:visited {
-  background-color: #f44336;
+  background-color: #16a085;
   color: white;
   padding: 14px 25px;
   text-align: center;
@@ -38,6 +38,6 @@ p {
 }
 
 .u-button:hover, .u-button:active {
-  background-color: red;
+  background-color: #1abc9c;
 }
 /*# sourceMappingURL=styles.css.map */
