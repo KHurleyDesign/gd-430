@@ -13,7 +13,16 @@
             font-family: Impact, Charcoal, sans-serif;
         }
 
-        .container {}
+        body {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: ;
+        }
+
+        .frostImg {
+            grid-columm: 2/4;
+
+        }
     </style>
 </head>
 
@@ -45,7 +54,7 @@
         I took the one less traveled by,<br>
         And that has made all the difference.</p>
 
-    <img src="frost.jpg" alt="Robert Frost in a suit, standing in frount of a tree with his right hand in his pocket and his left hand across his chest. He is looking past the photographer into the distance.">
+    <img class="frostImg" src="frost.jpg" alt="Robert Frost in a suit, standing in frount of a tree with his right hand in his pocket and his left hand across his chest. He is looking past the photographer into the distance.">
 
 </body>
 
