@@ -9,6 +9,7 @@
 
     <style>
         h1,
+        h2,
         p {
             font-family: sans-serif;
         }
@@ -16,7 +17,7 @@
         .container {
             display: grid;
             grid-template-columns: 600px 600px;
-            grid-template-rows: 100px 400px 600px 300px 400px 40px 100px;
+            grid-template-rows: 100px 400px 600px;
             margin-left: 125px;
             margin-right: 125px;
         }
@@ -37,6 +38,26 @@
             width: 500px;
             grid-column: 2/4;
             grid-row: 3/4;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .circleGreenThree {
+            background-color: rgba(50, 255, 126, .2);
+            height: 500px;
+            width: 500px;
+            grid-column: 1/2;
+            grid-row: 3/4;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .circleGreenFour {
+            background-color: rgba(50, 255, 126, .2);
+            height: 500px;
+            width: 500px;
+            grid-column: 2/3;
+            grid-row: 1/2;
             border-radius: 50%;
             display: inline-block;
         }
@@ -85,6 +106,13 @@
             margin: 0;
 
         }
+
+        .author {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            align-self: end;
+            color: rgba(50, 255, 126, .5);
+        }
     </style>
 
 </head>
@@ -121,6 +149,9 @@
     <div class="circleGreenTwo"></div>
     <img class="roseImg" src="rose.jpg" alt="A bright red rose frount faceing, with a bit of stem showing.">
     <h1 class="textHeading">If I Could Bribe Them By A Rose</h1>
+    <h2 class="author">Emily Dickinson</h2>
+    <div class="circleGreenThree"></div>
+    <div class="circleGreenFour"></div>
 </body>
 
 </html>
