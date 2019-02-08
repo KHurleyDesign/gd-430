@@ -64,6 +64,28 @@
             max-width: 500px;
             place-self: center;
         }
+
+        .parallelogramOne {
+            background: rgba(230, 103, 103, .5);
+            width: 1000px;
+            height: 500px;
+            transform: skew(20deg);
+            grid-column: 2/4;
+            grid-row: 1 /span 2;
+            place-self: center;
+            z-index: -1;
+        }
+
+        .parallelogramTwo {
+            background: rgba(99, 205, 218, .5);
+            width: 1000px;
+            height: 500px;
+            transform: skew(-20deg);
+            grid-column: 1/3;
+            grid-row: 3 /span 2;
+            place-self: center;
+            z-index: -1;
+        }
     </style>
 </head>
 
@@ -96,6 +118,9 @@
         And that has made all the difference.</p>
 
     <img class="frostImg" src="frost.jpg" alt="Robert Frost in a suit, standing in front of a tree with his right hand in his pocket and his left hand across his chest. He is looking past the photographer into the distance.">
+
+    <div class="parallelogramOne"></div>
+    <div class="parallelogramTwo"></div>
 
 </body>
 
