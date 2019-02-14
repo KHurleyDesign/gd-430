@@ -38,6 +38,14 @@ img {
 
 }
 
+.grid-sectionThree {
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    grid-template-rows: 5fr 1fr 4fr 5fr;
+    column-gap: 20%;
+    margin: 5%
+}
+
 .secOne-imgOne {
     grid-column: 4/5;
     grid-row: 2/3;
@@ -218,4 +226,52 @@ img {
     grid-column: 3/4;
     grid-row: 5/6;
     place-self: end center;
+}
+
+.secThree-imgOne {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.secThree-h2One {
+    height: 50%;
+    width: 75%;
+    background-color: #b2bec3;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: 3%;
+    place-self: start center;
+}
+
+.secThree-paraOne {
+    height: 50%;
+    width: 90%;
+    background-color: #dfe6e9;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    place-self: start center;
+}
+
+.secThree-imgTwo {
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.secThree-h2Two {
+    height: 10%;
+    width: 75%;
+    background-color: #b2bec3;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    margin-top: 3%;
+    place-self: start center;
+}
+
+.secThree-paraTwo {
+    height: 50%;
+    width: 90%;
+    background-color: #dfe6e9;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    place-self: center;
 }
