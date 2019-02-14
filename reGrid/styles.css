@@ -1,0 +1,16 @@
+img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.grid-SectionOne {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 2fr) 3fr repeat(2, 1fr 2fr);
+    grid-template-rows: 1fr 2fr 1fr 2fr 3fr 4fr;
+}
+
+.img-secOneImgOne {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
