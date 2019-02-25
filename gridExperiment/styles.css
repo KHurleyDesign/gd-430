@@ -5,7 +5,7 @@ body {
 
 
 .background {
-    background-image: url("/gridExperiment/images/floters.gif");
+    background-image: url("floters.gif");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.3;
