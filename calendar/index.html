@@ -2,6 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto:100,100i,400" rel="stylesheet">
     <style type="text/css">
         /* YUI 3.5.0 reset.css (http://developer.yahoo.com/yui/3/cssreset/) - http://cssreset.com */
         html {
@@ -123,6 +124,7 @@
             display: none
         }
 
+        /* Start of my code*/
         html,
         body {
             width: 100%;
@@ -130,12 +132,9 @@
             overflow: hidden;
         }
 
-        body {
-            margin: 0px auto;
-        }
+        body {}
 
         main {
-            margin: 0px auto;
             box-sizing: border-box;
         }
 
@@ -144,9 +143,14 @@
             width: 100%;
             display: grid;
             grid-template-columns: repeat(7, 1fr);
+            margin-left: 5%;
         }
 
-        li {}
+        li {
+            font-family: 'Roboto', sans-serif;
+
+
+        }
 
         li.begins.on.sunday {
             grid-column: 1;
@@ -176,21 +180,50 @@
             grid-column: 7;
         }
 
-        h3,
-        abbr {
-            display: none;
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: calc(1rem + 2vmax);
+            text-align: center;
+            padding-bottom: 1%;
+            background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+        }
+
+        .day {
+            font-family: 'Playfair Display', serif;
+            text-decoration: underline;
+            font-size: calc(1rem + 1vmax);
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: thin;
+            font-style: italc;
+
         }
 
         /*Smart phone*/
-        @media screen and (max-width: 599px) {}
+        @media screen and (max-width: 599px) {
+            .day {
+                display: none;
+            }
+        }
 
         /*Tablet*/
-        @media screen and (min-width: 600px) and (max-width: 1199px) {}
+        @media screen and (min-width: 600px) and (max-width: 1199px) {
+
+            abbr {
+                display: none;
+            }
+        }
 
         /*Desktop*/
-        @media screen and (min-width: 1200px) {}
+        @media screen and (min-width: 1200px) {
 
-        /* Start of my styles */
+            h3,
+            abbr {
+                display: none;
+            }
+        }
     </style>
 </head>
 
