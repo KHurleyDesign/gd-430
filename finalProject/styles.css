@@ -317,7 +317,7 @@ li:hover {
       grid-template-rows: repeat(16, 1fr);
   padding: 5%;
   background-image: url(/finalProject/img/fruit.jpg);
-  background-repeat: no-repeat, repeat;
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
@@ -393,11 +393,44 @@ li:hover {
   grid-row: 15/17;
 }
 
+.footerGrid {
+  background-color: lightgray;
+  padding: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (0.5fr)[2];
+      grid-template-rows: repeat(2, 0.5fr);
+}
+
+.h1Terms {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.list {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
 p {
   line-height: 1.5em;
 }
 
 .introHeadline {
   font-size: 16rem;
+}
+
+.footerHeadline {
+  font-size: 5rem;
 }
 /*# sourceMappingURL=styles.css.map */
