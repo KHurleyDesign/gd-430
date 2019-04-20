@@ -316,7 +316,7 @@ li:hover {
   -ms-grid-rows: (1fr)[16];
       grid-template-rows: repeat(16, 1fr);
   padding: 5%;
-  background-image: url(/finalProject/fruit.jpg);
+  background-image: url(fruit.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
