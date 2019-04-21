@@ -11,21 +11,23 @@
     z-index: 1;
 }
 
+.h3-Intro {
+    grid-column: 6/10;
+    grid-row: 4/5;
+    padding-top: 15px;
+}
+
 .introPOne {
-    grid-column: 2/5;
-    grid-row: 3/4;
+    grid-column: 2/6;
+    grid-row: 2/4;
+    place-self: center;
 }
 
 .introPTwo {
     grid-column: 6/10;
     grid-row: 4/6;
-    // place-self: center;
+    place-self: center;
 }
-
-// .introPThree {
-//     grid-column: 6/10;
-//     grid-row: 5/6;
-// }
 
 .introImg {
     grid-column: 6/10;
@@ -38,28 +40,30 @@
 .imgGrid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     padding: 5%;
     background-image: url(veggie.jpg);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.imgPara {
-    background-color: rgba(255, 255, 255, 0.75);
+.imgHead {
     grid-column: 2/6;
-    grid-row: 2/5;
-    padding: 10%;
-    border-radius: 5%
+    grid-row: 2/3;
 }
 
-.imgParaTwo {
-    background-color: rgba(255, 255, 255, 0.75);
-    grid-column: 7/10;
-    grid-row: 5/7;
+.imgTextGrid {
+    grid-column: 2/6;
+    grid-row: 1/4;
     padding: 10%;
-    border-radius: 5%
+
+    border-radius: 5%;
+
+    li {
+        line-height: 2rem;
+    }
 }
+
 
 .secThreeImg {
     grid-column: 2/7;

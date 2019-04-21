@@ -69,39 +69,42 @@ a {
     font-size: 5em;
 }
 
-li:hover {
-    text-decoration: #69f0ae underline;
-}
+.linksLi {
 
-@media screen and (min-width: 750px) {
+    li:hover {
+        text-decoration: #69f0ae underline;
+    }
+
+    @media screen and (min-width: 750px) {
 
 
-    span.popup {
-        height: 0;
-        position: relative;
-        cursor: pointer;
+        span.popup {
+            height: 0;
+            position: relative;
+            cursor: pointer;
 
-        &:after {
-            content: attr(data-popuptext);
-            background: black;
-            color: white;
-            border-radius: 30px;
-            opacity: 0;
-            top: 0;
-            left: 0;
-            position: absolute;
-            width: 30rem;
-            transition: 500ms ease;
-            font-size: 20px;
-            line-height: 1.5em;
-        }
+            &:after {
+                content: attr(data-popuptext);
+                background: black;
+                color: white;
+                border-radius: 30px;
+                opacity: 0;
+                top: 0;
+                left: 0;
+                position: absolute;
+                width: 30rem;
+                transition: 500ms ease;
+                font-size: 20px;
+                line-height: 1.5em;
+            }
 
-        &:hover:after {
-            opacity: 1;
-            top: 1.2em;
-            left: 5em;
-            padding: 3%;
-            z-index: 1;
+            &:hover:after {
+                opacity: 1;
+                top: 1.2em;
+                left: 5em;
+                padding: 3%;
+                z-index: 1;
+            }
         }
     }
 }
