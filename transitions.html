@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transitions</title>
+
+    <style>
+        html {
+            color: #000;
+            background: #FFF;
+        }
+
+        body,
+        div,
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        code,
+        form,
+        fieldset,
+        figure,
+        legend,
+        input,
+        textarea,
+        p,
+        blockquote,
+        th,
+        td {
+            margin: 0;
+            padding: 0
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        fieldset,
+        img {
+            border: 0;
+        }
+
+        address,
+        caption,
+        cite,
+        code,
+        dfn,
+        em,
+        strong,
+        th,
+        var {
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        caption,
+        th {
+            text-align: left;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 100%;
+            font-weight: normal;
+        }
+
+        q:before,
+        q:after {
+            content: ''
+        }
+
+        abbr,
+        acronym {
+            border: 0;
+            font-variant: normal;
+        }
+
+        sup {
+            vertical-align: text-top;
+        }
+
+        sub {
+            vertical-align: text-bottom;
+        }
+
+        input,
+        textarea,
+        select {
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+        }
+
+        input,
+        textarea,
+        select {
+            *font-size: 100%;
+        }
+
+        legend {
+            color: #000;
+        }
+
+        #yui3-css-stamp.cssreset {
+            display: none;
+        }
+
+        a {
+            display: block;
+            margin: 5%;
+            text-decoration: none;
+            font-family: sans-serif;
+            color: black;
+
+
+        }
+
+        a:visited {
+            color: grey;
+        }
+
+        .supriseFive {
+            animation: pulse 5s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                color: #001F3F;
+                font-size: 1em;
+            }
+
+            100% {
+                color: #FF4136;
+                font-size: 3em;
+            }
+        }
+
+
+
+        .yellowBox a:hover {
+            background-color: yellow;
+            place-self: center;
+            width: 5%;
+            animation: yellowBar 2s ease-in-out;
+        }
+
+        @keyframes yellowBar {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 10%;
+            }
+        }
+
+        .blur:hover a {
+            transition: all 300ms ease;
+            filter: blur(6px);
+            transform: rotate(360deg);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, crimson, pink, springgreen);
+            background-size: 200% 200%;
+            animation: rainbow 2s ease-in-out infinite;
+            font-size: 10rem;
+            width: 80vw;
+            color: white;
+            margin: 30vh auto;
+            display: block;
+            text-align: center;
+            transition: color .2s ease-in-out;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        .gradient-text a:visited {
+            color: white;
+        }
+
+        @keyframes rainbow {
+            0% {
+                background-position: left
+            }
+
+            50% {
+                background-position: right
+            }
+
+            100% {
+                background-position: left
+            }
+        }
+
+        .bounce:hover a {
+            animation: bounceIn 2s;
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.1);
+                opacity: 0;
+            }
+
+            60% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="yellowBox"> <a href="https://www.catster.com/wp-content/uploads/2018/05/A-gray-cat-crying-looking-upset.jpg">Click
+                Me</a>
+        </li>
+
+        <li class="blur"> <a href="https://ichef.bbci.co.uk/news/624/cpsprodpb/5D01/production/_95790832_gettyimages-516700094.jpg">Click
+                Me</a>
+        </li>
+
+        <li class="gradient-text"><a href="https://media.wired.com/photos/5b50d55932ccf1343a8aab5d/master/w_289,c_limit/catinbox_cotton_bydesireeyip.jpg">Click
+                Me</a>
+        </li>
+
+
+        <li class="bounce"> <a href="https://cdn.theatlantic.com/assets/media/img/mt/2018/03/AP_325360162607/lead_720_405.jpg?mod=1533691828">
+                Click
+                Me</a>
+        </li>
+
+
+        <li class="supriseFive"> <a href="https://s.abcnews.com/images/Lifestyle/cats-dogs1-gty-mem-171130_16x9_992.jpg">
+                Click
+                Me</a>
+        </li>
+    </ul>
+</body>
+
+</html>

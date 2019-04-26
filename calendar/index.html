@@ -1,0 +1,332 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto:100,100i,400" rel="stylesheet">
+    <style type="text/css">
+        /* YUI
+         3.5.0 reset.css (http://developer.yahoo.com/yui/3/cssreset/) - http://cssreset.com */
+        html {
+            color: #000;
+            background: #FFF
+        }
+
+        body,
+        div,
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        code,
+        form,
+        fieldset,
+        figure,
+        legend,
+        input,
+        textarea,
+        p,
+        blockquote,
+        th,
+        td {
+            margin: 0;
+            padding: 0
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        fieldset,
+        img {
+            border: 0
+        }
+
+        address,
+        caption,
+        cite,
+        code,
+        dfn,
+        em,
+        strong,
+        th,
+        var {
+            font-style: normal;
+            font-weight: normal
+        }
+
+        ol,
+        ul {
+            list-style: none
+        }
+
+        caption,
+        th {
+            text-align: left
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 100%;
+            font-weight: normal
+        }
+
+        q:before,
+        q:after {
+            content: ''
+        }
+
+        abbr,
+        acronym {
+            border: 0;
+            font-variant: normal
+        }
+
+        sup {
+            vertical-align: text-top
+        }
+
+        sub {
+            vertical-align: text-bottom
+        }
+
+        input,
+        textarea,
+        select {
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit
+        }
+
+        input,
+        textarea,
+        select {
+            *font-size: 100%
+        }
+
+        legend {
+            color: #000
+        }
+
+        #yui3-css-stamp.cssreset {
+            display: none
+        }
+
+        /* Start of my code*/
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {}
+
+        main {
+            box-sizing: border-box;
+        }
+
+        ul {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+
+        li {
+            font-family: 'Roboto', sans-serif;
+            margin-left: 25%;
+
+
+        }
+
+        li.begins.on.sunday {
+            grid-column: 1;
+        }
+
+        li.begins.on.monday {
+            grid-column: 2;
+        }
+
+        li.begins.on.tuesday {
+            grid-column: 3;
+        }
+
+        li.begins.on.wednesday {
+            grid-column: 4;
+        }
+
+        li.begins.on.thursday {
+            grid-column: 5;
+        }
+
+        li.begins.on.friday {
+            grid-column: 6;
+        }
+
+        li.begins.on.saturday {
+            grid-column: 7;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: calc(1rem + 2vmax);
+            text-align: center;
+            padding-bottom: 1%;
+            background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+        }
+
+        .day {
+            font-family: 'Playfair Display', serif;
+            text-decoration: underline;
+            font-size: calc(1rem + 1vmax);
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400i;
+            color: #43e97c
+        }
+
+        /*Smart phone*/
+        @media screen and (max-width: 599px) {
+
+            ul {
+                height: 100vh;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 100vw;
+                grid-template-rows: repeat(31, 100vh);
+            }
+
+            .day {
+                display: none;
+            }
+
+            abbr {
+                display: block;
+                font-family: 'Playfair Display', serif;
+                text-decoration: underline;
+                font-size: calc(1rem + 3vmax);
+
+            }
+
+            h3 {
+                display: block;
+
+            }
+
+            li {
+                margin-left: 0;
+                border-bottom: 2px solid black;
+                margin-bottom: 3%
+            }
+
+            li.begins.on.wednesday {
+                grid-column: 1;
+            }
+        }
+
+
+
+
+        /*Tablet*/
+        @media screen and (min-width: 600px) and (max-width: 1199px) {
+            abbr {
+                display: none;
+            }
+
+
+            ul {
+                height: 100vh;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-rows: 10vh 90vh repeat(4, 100vh);
+            }
+
+            h3 {
+                display: block;
+            }
+
+            li {
+                margin-left: 35%;
+            }
+
+        }
+
+
+        /*Desktop*/
+        @media screen and (min-width: 1200px) {
+
+            h3,
+            abbr {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>January 2020</h1>
+        </header>
+        <ul>
+            <li class="day">S</li>
+            <li class="day">M</li>
+            <li class="day">T</li>
+            <li class="day">W</li>
+            <li class="day">T</li>
+            <li class="day">F</li>
+            <li class="day">S</li>
+            <li class="begins on wednesday"><abbr title="Wednesday">W</abbr>1<h3>New Years Day</h3>
+            </li>
+            <li><abbr title="Thursday">T</abbr>2</li>
+            <li><abbr title="Friday">F</abbr>3</li>
+            <li><abbr title="Saturday">S</abbr>4</li>
+            <li><abbr title="Sunday">S</abbr>5</li>
+            <li><abbr title="Monday">M</abbr>6</li>
+            <li><abbr title="Tuesday">T</abbr>7</li>
+            <li><abbr title="Wednesday">W</abbr>8</li>
+            <li><abbr title="Thursday">T</abbr>9</li>
+            <li><abbr title="Friday">F</abbr>10</li>
+            <li><abbr title="Saturday">S</abbr>11</li>
+            <li><abbr title="Sunday">S</abbr>12</li>
+            <li><abbr title="Monday">M</abbr>13<h3>Martin Luther King Day</h3>
+            </li>
+            <li><abbr title="Tuesday">T</abbr>14</li>
+            <li><abbr title="Wednesday">W</abbr>15</li>
+            <li><abbr title="Thursday">T</abbr>16</li>
+            <li><abbr title="Friday">F</abbr>17</li>
+            <li><abbr title="Saturday">S</abbr>18</li>
+            <li><abbr title="Sunday">S</abbr>19</li>
+            <li><abbr title="Monday">M</abbr>20</li>
+            <li><abbr title="Tuesday">T</abbr>21</li>
+            <li><abbr title="Wednesday">W</abbr>22</li>
+            <li><abbr title="Thursday">T</abbr>23</li>
+            <li><abbr title="Friday">F</abbr>24</li>
+            <li><abbr title="Saturday">S</abbr>25</li>
+            <li><abbr title="Sunday">S</abbr>26</li>
+            <li><abbr title="Monday">M</abbr>27</li>
+            <li><abbr title="Tuesday">T</abbr>28</li>
+            <li><abbr title="Wednesday">W</abbr>29</li>
+            <li><abbr title="Thursday">T</abbr>30</li>
+            <li><abbr title="Friday">F</abbr>31</li>
+        </ul>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>In-Class exercise | Units Fixed</title>
+
+    <style>
+        h1,
+        h2,
+        p {
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 600px 600px;
+            grid-template-rows: 100px 400px 600px;
+            margin-left: 125px;
+            margin-right: 125px;
+        }
+
+        .circleGreen {
+            background-color: rgba(50, 255, 126, .2);
+            height: 500px;
+            width: 500px;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .circleGreenTwo {
+            background-color: rgba(50, 255, 126, .2);
+            height: 500px;
+            width: 500px;
+            grid-column: 2/4;
+            grid-row: 3/4;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .circleGreenThree {
+            background-color: rgba(50, 255, 126, .2);
+            height: 500px;
+            width: 500px;
+            grid-column: 1/2;
+            grid-row: 3/4;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .circleGreenFour {
+            background-color: rgba(50, 255, 126, .2);
+            height: 500px;
+            width: 500px;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .textPoemOne {
+            margin-left: 70px;
+            grid-column: 2/3;
+            grid-row: 2/ span 2;
+            line-height: 25px;
+            color: black;
+            z-index: 1;
+        }
+
+        .triangleTopLeft {
+            grid-column: 1/2;
+            grid-row: 1 / span 2;
+            width: 0;
+            height: 0;
+            border-top: 300px solid rgba(231, 76, 60, 1.0);
+            border-right: 300px solid transparent;
+        }
+
+        .triangleBottomRight {
+            grid-column: 2/3;
+            grid-row: 3/4;
+            width: 0;
+            height: 0;
+            border-bottom: 600px solid rgba(231, 76, 60, 1.0);
+            border-left: 600px solid transparent;
+        }
+
+        .roseImg {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            width: 100%;
+
+        }
+
+        .textHeading {
+            color: rgba(192, 57, 43, .5);
+            font-family: serif;
+            font-size: 200px;
+            text-transform: uppercase;
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 4;
+            margin: 0;
+
+        }
+
+        .author {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            align-self: end;
+            color: rgba(50, 255, 126, .5);
+        }
+    </style>
+
+</head>
+
+<body class="container">
+    <div class="triangleTopLeft"></div>
+    <div class="textPoemOne">
+
+        <p> If I could bribe them by a Rose<br>
+            I'd bring them every flower that grows<br>
+            From Amherst to Cashmere!<br>
+            I would not stop for night, or storm—<br>
+            Or frost, or death, or anyone—<br>
+            My business were so dear!</p>
+
+        <p>If they would linger for a Bird<br>
+            My Tambourin were soonest heard<br>
+            Among the April Woods!<br>
+            Unwearied, all the summer long,<br>
+            Only to break in wilder song<br>
+            When Winter shook the boughs!</p>
+
+        <p>What if they hear me!<br>
+            Who shall say<br>
+            That such an importunity<br>
+            May not at last avail?</p>
+
+        <p>That, weary of this Beggar's face—<br>
+            They may not finally say, Yes—<br>
+            To drive her from the Hall? </p>
+    </div>
+    <div class="triangleBottomRight"></div>
+    <div class="circleGreen"></div>
+    <div class="circleGreenTwo"></div>
+    <img class="roseImg" src="rose.jpg" alt="A bright red rose frount faceing, with a bit of stem showing.">
+    <h1 class="textHeading">If I Could Bribe Them By A Rose</h1>
+    <h2 class="author">Emily Dickinson</h2>
+    <div class="circleGreenThree"></div>
+    <div class="circleGreenFour"></div>
+</body>
+
+</html>
