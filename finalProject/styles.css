@@ -213,7 +213,10 @@ a {
   font-size: 5em;
 }
 
-.linksLi li:hover {
+.linksLi h1,
+.linksLi a,
+.linksLi li,
+.linksLi p:hover {
   -webkit-text-decoration: #69f0ae underline;
           text-decoration: #69f0ae underline;
 }
@@ -526,5 +529,26 @@ p {
 
 .footerList li {
   padding: 3px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 50%;
+  height: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 /*# sourceMappingURL=styles.css.map */

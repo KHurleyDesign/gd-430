@@ -71,7 +71,10 @@ a {
 
 .linksLi {
 
-    li:hover {
+    h1,
+    a,
+    li,
+    p:hover {
         text-decoration: #69f0ae underline;
     }
 
