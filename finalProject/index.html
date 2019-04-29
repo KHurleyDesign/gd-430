@@ -12,7 +12,7 @@
 
 <body>
     <section class="introGrid">
-        <h1 class="hello introHeadline">Welcome,</h1>
+        <h1 class="hello introHeadline" id="headline">Welcome,</h1>
         <p class="introPOne p-intro">Designed with the home cook with no time to grocery shop in mind, Green Eats
             delivers your
             pre-selected vegitarian meal plan to your door every week with pre-measured ingredients. </p>
@@ -34,7 +34,7 @@
 
     <section class="imgGrid">
         <div class="imgText imgTextGrid">
-            <h2 class="secHeadStyle">How It Works</h2>
+            <h2 class="secHeadStyle" id="subhead">How It Works</h2>
             <ul>
                 <li class="threeHeadStyle">Pick a plan</li>
 
@@ -64,13 +64,14 @@
 
             </ul>
 
-            <button class="bStyle">Get Started</button>
+            <button class="bStyle" id="ctas">Get Started</button>
         </div>
 
 
         <img class="secThreeImg" src="granola.jpg" alt="">
-        <h2 class="secThreeH2 secHeadStyle ">Why Vegitarian?</h2>
-        <p class="secThreeP">People become vegetarians for many reasons, including health, religious convictions,
+        <h2 class="secThreeH2 secHeadStyle ">Why Vegetarian?</h2>
+        <p class="secThreeP" id="bodyCopy">People become vegetarians for many reasons, including health, religious
+            convictions,
             concerns about animal welfare or the use of antibiotics and hormones in livestock, or a desire to eat in a
             way that avoids excessive use of environmental resources. Some people follow a largely vegetarian diet
             because they can't afford to eat meat. Becoming a vegetarian has become more appealing and accessible,
@@ -94,27 +95,35 @@
     </section>
 
     <footer class="footerGrid">
-        <h1 class="h1Terms footerHeadline">Terms</h1>
-        <ul class="list">
-            <li> Information Copy
-                <ul>
-                    <li>Headlines</li>
-                    <li>Subheads</li>
-                    <li>BodyCopy</li>
-                </ul>
-            </li>
-            <li> Interaction Copy
-                <ul>
-                    <li>Captions</li>
-                    <li>CTAs</li>
-                    <li>Notifications</li>
-                    <li>Errors</li>
-                    <li>Onboarding</li>
-                </ul>
-            </li>
+        <h1 class="footerHeading footerHeadline">Green Eats</h1>
+        <p class="footerP">Contact us for any questions about our products or just to say hello. Or Sign up for our
+            email list.</p>
 
+        <form class="emailForm">
+            <input name="Email" type="text">
+            <input class="bStyle" value="Submit" type="submit">
+        </form>
+
+        <h2 class="terms termsHead">Terms</h2>
+        <ul class="listOne footerList">
+            <li>Onboarding</li>
+            <li><a href="#subhead">Subheads</a></li>
+            <li>Errors</li>
+            <li><a href="#headline">Headlines</a></li>
         </ul>
+
+        <ul class="listTwo footerList">
+            <li>Captions</li>
+            <li><a href="#ctas">CTAs</a></li>
+            <li>Notifications</li>
+            <li><a href="#bodyCopy">Bodycopy</a></li>
+            <li>Errors</li>
+        </ul>
+
     </footer>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="smothScroll.js" type="text/javascript"></script>
 
 </html>

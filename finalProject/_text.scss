@@ -48,5 +48,19 @@ p {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+.termsHead {
+    font-weight: 700;
+    color: #636363;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.footerList {
+
+    li {
+        padding: 3px;
+    }
 
 }
